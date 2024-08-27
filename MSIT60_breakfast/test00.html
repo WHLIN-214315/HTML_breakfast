@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./navStyle.css">
+    <link rel="stylesheet" href="./navStyle_TW.css">
+    <link rel="stylesheet" href="./navStyle_EN.css">
+
+    <link rel="stylesheet" href="./coverflow.css">
+    <link rel="stylesheet" href="./colorGreen.css">
+    <link rel="stylesheet" href="./colorRed.css">
+    <!-- <link rel="stylesheet" href="./greendiv.css">
+    <link rel="stylesheet" href="./reddiv.css"> -->
+    <link rel="stylesheet" href="./dot.css">
+    <link rel="stylesheet" href="./slideshow.css">
+    <link rel="stylesheet" href="./fruit.css">
+
+    <link rel="stylesheet" href="./grandpa.css">
+
+
+    <style>
+        .nav :visited {
+             color: black; 
+        }
+        /* 畫面滿版 */
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* 圖片縮放 */
+        .imga {
+            width: 100%;
+            object-fit: cover;
+            vertical-align: middle;
+            transition: 0.5s;
+        }
+        .imga :hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+            position: relative;
+            z-index: 999;
+        }
+
+        /* Vertical Navigation Bar */
+        .ula {
+            list-style-type: none;
+            margin: 0;
+            /* padding: 20px; */
+            width: 150px;
+            /* background-color: #f1f1f1; */
+        }
+        .lia a {
+            display: block;
+            color: #000;
+            padding:0;
+            text-align: center;
+            text-decoration: none;
+            border:gray dashed;
+            border-width: 1px 0 1px 0;
+        }
+        /* Change the link color on hover */
+        .lia a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /* .text-area {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        } */
+        
+        /* 導覽列點擊事件用 */
+        .button{
+        background:#ccc;
+        padding:10px;
+        color:#000;
+        display: inline-block;
+        }
+        /* .bar-block{
+        margin-bottom:20px;
+        } */
+        .clickGray{
+        background: #555!important;
+        color:#fff!important;
+        }
+
+
+
+    </style>
+        
+
+
+    <title>弘爺國際企業股份有限公司</title>
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul class="navStyle">
+                <span>
+                    <a href="./test00.html"><img src="logo.png"></a>
+                </span>
+                <li>
+                    <span class="navStyle_TW">關於我們</span><br>
+                    <span class="navStyle_EN">About Us</span>
+                </li>
+                <li>
+                    <span class="navStyle_TW">最新消息</span><br>
+                    <span class="navStyle_EN">News&nbsp;&amp;&nbsp;Event</span>
+                </li>
+                <li>
+                    <a href="./test00_2menu.html">
+                        <span class="navStyle_TW">美味餐點</span><br>
+                        <span class="navStyle_EN">Menu</span>
+                    </a>
+                </li>
+                <li>
+                    <span class="navStyle_TW">我要加盟</span><br>
+                    <span class="navStyle_EN">Join Us</span>
+                </li>
+                <li>
+                    <span class="navStyle_TW">加盟主專區</span><br>
+                    <span class="navStyle_EN">Franchisee Area</span>
+                </li>
+                <li>
+                    <span class="navStyle_TW">門市據點</span><br>
+                    <span class="navStyle_EN">Where&nbsp;to&nbsp;Buy</span>
+                </li>
+                <li>
+                    <a href="./test00_3contact.html">
+                        <span class="navStyle_TW">聯絡我們</span><br>
+                        <span class="navStyle_EN">Contact Us</span>
+                    </a>
+                </li>
+                <li>
+                    <span class="navStyle_TW">線上加盟</span><br>
+                    <span class="navStyle_EN">Online Franchise</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section style="text-align: center; position: relative;">
+                <!-- <div style="display: inline-block;" id="greendiv">
+                    <h3>黃金時刻‧美味共享</h3>
+                    <p>新鮮/健康/自然</p>
+                    <p>美味餐點</p>
+                </div>
+                <div style="display: inline-block; bottom: 0;" id="reddiv">
+                    <h3>加盟專區</h3>
+                    <p>加入賺錢頭家的行列</p>
+                    <p>加盟簡介</p>
+                </div> -->
+
+                <!-- <div id="cover" class="coverflow"> -->
+                <div class="slideshow">
+                    <div class="slide__item fades">
+                        <img src="banner01.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="slide__item fades">
+                        <img src="官網形象BANNER-02.jpg" style="width: 100%;">
+                    </div>
+                    
+                    <div class="slide__item fades">
+                        <img src="官網形象BANNER-03.jpg" style="width: 100%;">
+                    </div>
+                </div>
+
+                <script src="./slideshow.js"></script>
+               
+                <!-- 左右兩側切換的箭頭按鈕 -->
+                <a id="prev" class="slide__arraw slide__arraw--prev"> ❮ </a>
+                <a id="next" class="slide__arraw slide__arraw--next"> ❯ </a>
+
+                <!-- 小圓點 -->
+                <div class="slide__dot">
+                    <div class="dot" data-value="1"></div>
+                    <div class="dot" data-value="2"></div>
+                    <div class="dot" data-value="3"></div>
+                </div>
+                 
+            </section>
+
+            <section id="block" style="position: relative;">
+                
+                <h1 style="text-align: center; color: #555; font-size: 30px;">從弘爺漢堡開啟幸福的每一天</h1>
+                <!-- display: flex; align-items: center; justify-content: center -->
+                <div style="text-align: center; font-size: 40px; font-family: monospace;">
+                    <!-- display: flex; align-items: center; justify-content: center;  -->
+                    <span class="colorGreen">HONG YA&nbsp;</span><span class="colorRed">HAMBURGER</span>
+                </div>
+                
+                <div class="imga" style="text-align: center;">
+                    <img width="1000px" src="./20240307官網-濾掛1200x420_工作區域 1 複本 3.jpg">
+                </div>
+                
+                <!-- 蔬菜圖片 -->
+                <div>
+                    <img id="img1" class="fruitClass1">
+                    <img id="img2" class="fruitClass2">
+                    <img id="img3" class="fruitClass3">
+                    <img id="img4" class="fruitClass4">
+
+
+                    <script>
+                        let my_block = document.getElementById("block");
+                        let my_img1 = document.getElementById("img1");
+                        let my_img2 = document.getElementById("img2");
+                        let my_img3 = document.getElementById("img3");
+                        let my_img4 = document.getElementById("img4");
+
+                        window.addEventListener("scroll", function(){
+
+                        if (my_block.getBoundingClientRect().top <= 200) {
+                            
+                            my_img1.setAttribute("src", "./vegS_01.png");
+                            my_img1.classList.add("imgFly1");
+                            my_img2.setAttribute("src", "./vegS_02.png");
+                            my_img2.classList.add("imgFly2");
+                            my_img3.setAttribute("src", "./vegS_03.png");
+                            my_img3.classList.add("imgFly3");
+                            my_img4.setAttribute("src", "./vegS_04.png");
+                            my_img4.classList.add("imgFly4");
+                        }
+                        });
+                    </script>
+                </div>
+
+                <div style="display: flex; padding: 0 50px 50px 50px;">
+                    <!-- 左側導覽列 -->
+                    <div style="width: 200px; display: inline-block;">
+                        <ul class="ula" style="display: inline-block;">
+                            <li class="lia">
+                                <!-- <a href="#活動快訊"><h3>活動快訊</h3></a> -->
+                                <a href="javascript:void(0)" class=" button tablink testbtn" onclick="openClass(event, 'class1')"><h3>活動快訊</h3></a>
+                            </li>
+                            <li class="lia">
+                                <!-- <a href="#加盟說明會"><h3>加盟說明會</h3></a> -->
+                                <a href="javascript:void(0)" class=" button tablink" onclick="openClass(event, 'class2')"><h3>加盟說明會</h3></a>
+                            </li>
+                            <li class="lia">
+                                <!-- <a href="#店家活動"><h3>店家活動</h3></a> -->
+                                <a href="javascript:void(0)" class=" button tablink" onclick="openClass(event, 'class3')"><h3>店家活動</h3></a>
+                            </li>
+                            <li class="lia">
+                                <!-- <a href="#店家介紹"><h3>店家介紹</h3></a> -->
+                                <a href="javascript:void(0)" class=" button tablink" onclick="openClass(event, 'class4')"><h3>店家介紹</h3></a>
+                            </li>
+                            <li class="lia">
+                                <!-- <a href="#媒體報導"><h3>媒體報導</h3></a> -->
+                                <a href="javascript:void(0)" class=" button tablink" onclick="openClass(event, 'class5')"><h3>媒體報導</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 右邊新聞欄 -->
+                    <div id="class1" class="class" style="margin: 15px; display: inline-block;"> 
+                        <!-- <div style="display: inline-block; width: 90%; height: ; background-color: brown; border: 5px solid green;"> -->
+                            <div style="display: flex ;">   
+                                <div style="flex: 1; display: flex; align-items: center; justify-content: center">
+                                    <img src="./2024sanrioview02.jpg">
+                                </div>
+                                <div style="flex: 2;">
+                                    <h5>2024 Hello Kitty遊樂園天天陪你吃早餐×聯名刮刮卡活動 | 刮豪禮！集好運！汽車！百萬豪禮大FUN送【弘爺漢堡x三麗鷗】吃早餐送汽車【活動主頁】</h5>
+                                    <p>2024-06-03<br>弘爺漢堡聯名三麗鷗刮刮卡活動！弘爺漢堡吃早餐！百萬豪禮大FUN送！汽車、iPhone、三麗鷗聯名商品、美粒果及Qoo週邊商品等 超過50萬獎項通通帶回家 來店消費滿80元即送刮刮卡一張～ 天天吃早餐！驚喜天天來～  刮好禮 集好運 弘爺漢堡</p>
+                                </div>
+                                <div style="flex: 1; display: flex; align-items: center; justify-content: center">
+                                    <img src="./禁止性騷擾符號-02.jpg">
+                                </div>
+                                <div style="flex: 2; ;">
+                                    <h5>【弘爺總部公告】性騷擾防治措施申訴及懲戒規範</h5>
+                                    <p>2024-05-16<br>本公司承諾，保護員工不受職場性侵害與性騷擾之威脅，建立友善的工作環境，提升員工性別平權之觀念，以杜絕職場性侵害與性騷擾之發生。你我共同維護職場安全，打造友善平等職場環境。</p>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <div id="class2" class=" class" style="margin: 15px; display: inline-block;"> 
+                        <div style="display: flex ;">
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center">
+                                <img src="./2020弘爺漢堡台中加盟展150.jpg">
+                            </div>
+                            <div style="flex: 2;">
+                                <h5>青年創業加盟如何選擇評估？統整早餐加盟品牌比較及常見問答Q&amp;A！</h5>
+                                <p>2023-09-20<br>對於想要投身早餐加盟的青年創業者來說，選擇一個優質的加盟品牌可以大大降低試錯成本，藉著加盟總部多年的經營KNOW-HOW及品牌價值提升創業的成功率。本文簡單整理了「早餐加盟品牌比較」以及「常見問答Q&amp;A」，讓創業者們對早餐加盟有個初步的認識。</p>
+                            </div>
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center">
+                                <img src="./弘爺漢堡-線上加盟說明會-長.jpg" >
+                            </div>
+                            <div style="flex: 2;">
+                                <h5>2022雲嘉苗竹地區線上加盟展，弘爺漢堡早餐加盟創業第一首選！</h5>
+                                <p>2022-09-07<br>弘爺漢堡線上加盟說明會，不用去加盟展也能聽創業！2022雲嘉苗竹地區線上加盟展，早餐開店選弘爺漢堡，多元加盟優惠專案把握時機、將危機變轉機，給你滿滿新商機!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 左邊導覽列深灰色切換與右邊新聞欄切換 -->
+                    <script>
+                        function openClass(evt, className) {
+                        var i, x, tablinks;
+                        x = document.getElementsByClassName("class");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablink");                   
+                        for (i = 0; i < x.length; i++) {
+                            tablinks[i].classList.remove("clickGray");
+                        }
+                        document.getElementById(className).style.display = "block";
+                        evt.currentTarget.classList.add("clickGray");
+                        }
+                
+                        var mybtn = document.getElementsByClassName("testbtn")[0];
+                        mybtn.click();
+                      </script>
+                </div>
+
+            </section>
+
+            <!-- <section style="background-color: blueviolet;">
+                <h1>成為國際知名餐飲連鎖品牌</h1>
+                <p>創造出消費者、加盟主、員工、供應商及股東滿意的幸福企業</p>
+                <button>了解更多</button>
+                <img src="./bottom_left.jpg" width="200">
+                <img src="./bottom_right.jpg" width="200">
+            </section> -->
+
+            <!-- <section style="background-color: aquamarine; background-image: url(./map.jpg); height: 200px; margin-top: -50px;">
+                
+                <p style="font-size: 50px; line-height:200px; text-align:center; color: white; font-family: fantasy;">
+                    <img src="./where-icon.png" width="50px">
+                    Where to eat?
+                </p>
+            </section> -->
+        </article>
+    </main>
+    <div>
+        <a href="#"><p id="grandpa"></p></a>
+    </div>
+    <footer style="margin-top: -30px; background-color: #000; text-align:right; padding-right: 50px; line-height:50px; color: white; height:50px;">
+        <div>© Copyrights 2018 弘爺國際企業股份有限公司 All rights reserved.</div>
+    </footer>
+
+</body>
+</html>

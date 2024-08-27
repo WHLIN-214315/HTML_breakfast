@@ -1,0 +1,8 @@
+.navStyle_TW {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.navStyle_TW:hover {
+    color: green;
+}

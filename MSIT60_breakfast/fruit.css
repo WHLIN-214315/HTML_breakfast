@@ -1,0 +1,78 @@
+.imgFly1{
+    animation: fly1 4s;
+}
+@keyframes fly1{
+    0%{
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.fruitClass1{
+    position: absolute;
+    top: 30px;
+}
+
+
+.imgFly2{
+    animation: fly2 4s;
+}
+@keyframes fly2{
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.fruitClass2{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+
+.imgFly3{
+    animation: fly3 4s;
+}
+@keyframes fly3{
+    0%{
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.fruitClass3{
+    position: absolute;
+    top: 250px;
+}
+
+
+.imgFly4{
+    animation: fly4 4s;
+
+}
+@keyframes fly4{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.fruitClass4{
+    position: absolute;
+    top: 270px;
+    right: 0;
+
+}

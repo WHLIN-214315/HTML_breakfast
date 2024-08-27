@@ -1,0 +1,8 @@
+.navStyle_EN {
+    font-size: small;
+    color: dimgray;
+}
+
+.navStyle_EN:hover {
+    color: red;
+}

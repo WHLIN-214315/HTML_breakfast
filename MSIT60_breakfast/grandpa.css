@@ -1,0 +1,10 @@
+#grandpa{
+    position: fixed; bottom: 0; right: 0;
+    background-image: url("./grandpa_01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+}

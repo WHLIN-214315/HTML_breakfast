@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意見表單 | 弘爺國際企業股份有限公司</title>
+
+    
+    <link rel="stylesheet" href="./navStyle.css">
+    <link rel="stylesheet" href="./navStyle_TW.css">
+    <link rel="stylesheet" href="./navStyle_EN.css">
+
+
+
+
+    <link rel="stylesheet" href="./grandpa.css">
+
+    <style>
+
+        .div1_1 {
+            border-radius: 30px 30px 0 0;
+            background-color: #009A53;
+            /* height: 80px; */
+            padding: 10px;
+        }
+        .div1_2 {
+            border-radius: 0 0 30px 30px;
+            background-color: rgb(255, 243, 245);
+        }
+
+        /* form */
+        fieldset {
+        margin: 1.5em 0 0 0;
+        padding: 0;
+        border: 3px solid #CCC;
+        }
+        /* legend {
+            margin-left: 1em;
+            color: #009;
+            font-weight: bold;
+        } */
+        label {
+            float: left;
+            width: 5em;
+            margin-right: 1em;
+            /* background-color: purple; */
+        }
+        fieldset ul {
+            list-style: none;
+            padding-top: 3px;
+            padding-left: 2em;
+            padding-bottom: 3px;
+            /* background-color: #009; */
+        }
+        fieldset li {
+            line-height: 40px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            /* background-color: #009A53; */
+        }
+        fieldset li input.fildform{
+            line-height: 24px;
+            height: 24px;
+            border: 1px solid #CCC;
+            width: 400px;
+        }
+        fieldset li input.fildform2{
+            line-height: 24px;
+            height: 48px;
+            border: 1px solid #CCC;
+            width: 400px;
+        }
+        fieldset li select.fildform{
+            line-height: 24px;
+            height: 24px;
+            border: 1px solid #CCC;
+
+        }
+        input[type="email"]:invalid,
+        input[type="text"]:invalid{
+            background-color: rgb(233, 186, 202);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <ul class="navStyle">
+                <span>
+                    <a href="./test00.html"><img src="logo.png"></a>
+                </span>
+                <li>
+                    <span class="navStyle_TW">關於我們</span><br>
+                    <span class="navStyle_EN">About Us</span>
+                </li>
+                <li>
+                    <span class="navStyle_TW">最新消息</span><br>
+                    <span class="navStyle_EN">News&nbsp;&amp;&nbsp;Event</span>
+                </li>
+                <li>
+                    <a href="./test00_2menu.html">
+                        <span class="navStyle_TW">美味餐點</span><br>
+                        <span class="navStyle_EN">Menu</span>
+                    </a>
+                </li>
+                <li>
+                    <span class="navStyle_TW">我要加盟</span><br>
+                    <span class="navStyle_EN">Join Us</span>
+                </li>
+                <li>
+                    <span class="navStyle_TW">加盟主專區</span><br>
+                    <span class="navStyle_EN">Franchisee Area</span>
+                </li>
+                <li>
+                    <span class="navStyle_TW">門市據點</span><br>
+                    <span class="navStyle_EN">Where&nbsp;to&nbsp;Buy</span>
+                </li>
+                <li>
+                    <a href="./test00_3contact.html">
+                        <span class="navStyle_TW">聯絡我們</span><br>
+                        <span class="navStyle_EN">Contact Us</span>
+                    </a>
+                </li>
+                <li>
+                    <span class="navStyle_TW">線上加盟</span><br>
+                    <span class="navStyle_EN">Online Franchise</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center;">- 意見表單 -</h1>
+
+        <div style="width: 60%; position: relative; left: 50%; transform: translateX(-50%);">
+
+            <div style="z-index: 999; height: 30px; position: relative; left: 50%; transform: translateX(-50%);">
+                
+                <img src="./contact/form-left.png" style=" position: absolute; bottom: -25px; left: 40px;">
+                
+                <img src="./contact/burger.png" style=" position: absolute; left: 50px; top: -50px">
+                
+                <img src="./contact/form-right.png" style="position: absolute; bottom: -25px; right: 40px;">
+            
+            </div>
+                <div class="div1_1">
+                    <p style="text-align: right; font-size: 20px; color: white;">如果您有任何建議或指教，請填妥以下表單，我們將儘快處理與回覆！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+                    
+
+                <div class="div1_2">
+                    <img src="./contact/form-top.png" style="width: 100%; position: relative; top: 0px;">
+                    
+                    <br><br><br><br><br>
+                    
+                    <form style="font-family: Arial, Helvetica, sans-serif; width: 600px; position: relative; left: 50%; transform: translateX(-50%);">
+                        <fieldset>
+                            <!-- <legend> Contact </legend> -->
+                                <ul>
+                                    <li>
+                                        <label for="theme">主旨 *</label>
+                                            <select id="theme" class="fildform" >
+                                                <option>請選擇主旨</option>    
+                                                <option>商品客訴</option>  
+                                                <option>其他客訴</option>  
+                                                <option>我要發言</option>  
+                                                <option>我要讚美</option>      
+                                            </select>
+                                    </li>
+                                    <li>
+                                        <label for="name1">姓名 *</label>
+                                        <input id="name1" type="text" class="fildform"/>
+                                    </li>
+                                    <li>
+                                        <label for="phone">手機 *</label>
+                                        <input id="phone" type="text" pattern="[0-9]{10}" class="fildform" />
+                                    </li>
+                                    <li>
+                                        <label for="mail">E-mail *</label>
+                                        <input id="mail" type="email" class="fildform" />
+                                    </li>
+                                    <li>
+                                        <label for="content">意見內容 *</label>
+                                        <input id="content" type="text" class="fildform2" />
+                                    </li>
+                                    <li>
+                                        <label for="city">店家資訊 *</label>
+                                        <select id="city" class="fildform" >
+                                            <option value="">縣市</option> 
+                                                <optgroup label="北部">
+                                                    <option value="基隆市">基隆市</option> 
+                                                    <option value="臺北市">臺北市</option> 
+                                                    <option value="新北市">新北市</option> 
+                                                    <option value="桃園市">桃園市</option> 
+                                                    <option value="新竹市">新竹市</option> 
+                                                    <option value="新竹縣">新竹縣</option> 
+                                                    <option value="苗栗縣">苗栗縣</option>
+                                                </optgroup>
+                                                <optgroup label="中部">
+                                                    <option value="臺中市">臺中市</option> 
+                                                    <option value="彰化縣">彰化縣</option> 
+                                                    <option value="南投縣">南投縣</option> 
+                                                    <option value="雲林縣">雲林縣</option> 
+                                                </optgroup>
+                                                <optgroup label="南部">
+                                                    <option value="嘉義市">嘉義市</option> 
+                                                    <option value="嘉義縣">嘉義縣</option> 
+                                                    <option value="臺南市">臺南市</option> 
+                                                    <option value="高雄市">高雄市</option> 
+                                                    <option value="屏東縣">屏東縣</option> 
+                                                </optgroup>
+                                                <optgroup label="東部與離島">
+                                                    <option value="臺東縣">臺東縣</option> 
+                                                    <option value="花蓮縣">花蓮縣</option> 
+                                                    <option value="宜蘭縣">宜蘭縣</option> 
+                                                    <option value="澎湖縣">澎湖縣</option> 
+                                                    <option value="金門縣">金門縣</option> 
+                                                    <option value="連江縣">連江縣</option>  
+                                                </optgroup>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="shopName">店名</label>
+                                        <input id="shopName" type="text" list="shop" class="fildform" />
+                                        <datalist id="shop">
+                                            <option value="西屯店">
+                                            <option value="北屯店">
+                                            <option value="南屯店">
+                                        </datalist>
+                                    </li>
+                                </ul>
+                        </fieldset>        
+                    </form>
+                    
+                    <br><br>
+                    <div style="text-align: center;">
+                        <button id="btnLogin">確認送出</button>
+                    </div>
+                
+                    <script>
+                        function checkInput() {
+                            var temp1 = name1.value;
+                            var temp2 = phone.value;
+                            var temp3 = mail.value;
+                            var temp4 = content.value;
+                
+                                if (temp1.length == 0) {
+                                    alert("姓名不可留白");
+                                    return false;
+                                } else if (temp2.length == 0) {
+                                    alert("手機不可留白");
+                                    return false;
+                                } else if (temp3.length == 0) {
+                                    alert("E-mail不可留白");
+                                    return false;
+                                } else if (temp4.length == 0) {
+                                    alert("意見內容不可留白");
+                                    return false;
+                                } else {
+                                    alert("已送出，謝謝您的意見回饋，我們會盡快跟您聯絡")
+                                }
+                        }
+                        btnLogin.addEventListener('click', checkInput);
+                
+                    </script>
+                    <br><br><br><br>
+                
+                </div>
+                
+        </div>
+            
+            
+            
+            
+            
+        
+
+
+        
+        
+
+
+
+        <br> <br> <br> <br> <br><br><br><br>
+
+    </main>
+    <div>
+        <a href="#"><p id="grandpa"></p></a>
+    </div>
+    <footer style="margin-top: -30px; background-color: #000; text-align:right; padding-right: 50px; line-height:50px; color: white; height:50px;">
+        <div>© Copyrights 2018 弘爺國際企業股份有限公司 All rights reserved.</div>
+    </footer>
+</body>
+</html>
